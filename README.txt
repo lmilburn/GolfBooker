@@ -3,6 +3,18 @@ GOLF TIME BOOKER
 VERSION 0.0 --> Functional, but requires some hard coding to get your designated date at the moment. To be fixed in future updates.
 VERSION 0.1 --> Functional and now contains the option to input your desired date and time.
 
+ABOUT THIS PROJECT
+-----------------
+This project utilizes Python with Selenium and PySimpleGUI to create a system which automates the booking of a tee time on the LA county golf website. Many people may find it hard to book certain tee times, which are often booked moments after release. The use of this project aims to reduce checkout time by automating the following processes:
+
+1. The login page
+2. Date selection
+3. Course selection
+4. Time selection
+5. Confirmation and checkout (provided a credit card is associated with the account)
+
+While it is not guaranteed that you will get your tee time, this process is much quicker than manually entering your information.
+
 
 SET-UP
 ------------------
@@ -58,6 +70,7 @@ If you want the program to run with Task Scheduler, follow these steps:
 
 Also, make sure you're checking the PowerShell if things seem to freeze up. There's little messages that appear when a task has been successful or a failure. 
 
+
 KNOWN ISSUES
 -------------
 -Sometimes the program may take too long to load and will error out. If this happens, try running again. If the error occurs again, the time has probably been booked already.
@@ -70,4 +83,4 @@ TO-DO LIST
 - Going to divide the code up into smaller functions so that things are a bit cleaner.
 - For cleaning purposes, I may not search for elements using their full XPATH any more. 
 - Going to add a trial/demonstration version which proceeds to the confirmation page, but doesn't hit checkout.
-- May develop a separate version which assumes the user is already logged in
+- May develop a separate version which assumes the user is already logged in and has all of their prefences selected; all that would occur is the search for an appropriate time,   the confirmation, and checkout. 
